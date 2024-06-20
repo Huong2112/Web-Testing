@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name ="Parallel test suite" parallel = "tests" thread-count="2">
+    <listeners>
+        <listener class-name="core.TestListener" />
+    </listeners>
+    <test name = "Chrome">
+        <classes>
+            <class name = "tests.TestCase01_10">
+                <methods>
+                    <include name = "TC_01"/>
+                    <include name = "TC_02"/>
+                    <include name = "TC_03"/>
+                    <include name = "TC_04"/>
+                    <include name = "TC_05"/>
+                    <include name = "TC_06"/>
+                    <include name = "TC_07"/>
+                    <include name = "TC_08"/>
+                    <include name = "TC_09"/>
+                    <include name = "TC_10"/>
+                </methods>
+
+        </class>
+        </classes>
+        <parameters>
+            <parameter name = "platform" value = "Windows"/>
+            <parameter name = "browser" value = "chrome"/>
+        </parameters>
+
+    </test>
+
+    <test name = "Edge">
+        <classes>
+            <class name = "tests.TestCase01_10">
+                <methods>
+                    <include name = "TC_01"/>
+                    <include name = "TC_02"/>
+                    <include name = "TC_03"/>
+                    <include name = "TC_04"/>
+                    <include name = "TC_05"/>
+                    <include name = "TC_06"/>
+                    <include name = "TC_07"/>
+                    <include name = "TC_08"/>
+                    <include name = "TC_09"/>
+                    <include name = "TC_10"/>
+
+                </methods>
+            </class>
+        </classes>
+        <parameters>
+            <parameter name = "platform" value = "Windows"/>
+            <parameter name = "browser" value = "MicrosoftEdge"/>
+        </parameters>
+
+    </test>
+
+<!--    <test name = "Firefox">-->
+<!--        <classes>-->
+<!--            <class name = "tests.TestCase01_10"/>-->
+<!--        </classes>-->
+<!--        <parameters>-->
+<!--            <parameter name = "platform" value = "Windows"/>-->
+<!--            <parameter name = "browser" value = "firefox"/>-->
+<!--        </parameters>-->
+
+<!--    </test>-->
+</suite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name ="Parallel test suite" parallel = "tests" thread-count="2">
+    <test name = "Chrome">
+        <classes>
+            <class name = "Lect7_Demo.SeleniumDemo"/>
+        </classes>
+        <parameters>
+            <parameter name = "platform" value = "Windows"/>
+            <parameter name = "browser" value = "chrome"/>
+        </parameters>
+
+    </test>
+    <test name = "Firefox">
+        <classes>
+            <class name = "Lect7_Demo.SeleniumDemo"/>
+        </classes>
+        <parameters>
+            <parameter name = "platform" value = "Windows"/>
+            <parameter name = "browser" value = "firefox"/>
+
+        </parameters>
+
+    </test>
+</suite>
